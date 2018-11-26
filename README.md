@@ -1,4 +1,4 @@
-## Ejercicio 1
+# Ejercicio 1
 
 Se deberá crear un repositorio y realizar una serie de operaciones desde la consola de comandos sobre el mismo para posteriormente subir el repositorio a Github.
 
@@ -288,7 +288,8 @@ Los pasos a ejecutar son los siguientes (los pasos en negrita indican que hay un
 		
 	```
 	$ git reflog
-	$ ... 1. se revisan las últimas acciones en el repo ...	$ ... 2. se observa que el repo llega a e6e65d1 con motivo del reset hecho desde HEAD~1 ...
+	$ ... 1. se revisan las últimas acciones en el repo ...	
+	$ ... 2. se observa que el repo llega a e6e65d1 con motivo del reset hecho desde HEAD~1 ...
 	$ ... 3. HEAD~1 es el commit inmediatamente anterior, con id 9ed4cc9
 	$ git reset --hard 9ed4cc9
 	```
@@ -487,7 +488,8 @@ Los pasos a ejecutar son los siguientes (los pasos en negrita indican que hay un
 		
 	```
 	$ git reflog
-	$ ... 1. se revisan las últimas acciones en el repo ...	$ ... 2. se detecta el commit de merge en master absorbiendo a title, con id 9fed53c ...
+	$ ... 1. se revisan las últimas acciones en el repo ...	
+	$ ... 2. se detecta el commit de merge en master absorbiendo a title, con id 9fed53c ...
 	$ git reset --hard 9fed53c
 	```
 
@@ -513,14 +515,16 @@ Los pasos a ejecutar son los siguientes (los pasos en negrita indican que hay un
 	*Opción 1* Movimiento de HEAD+master
 	```
 	$ git reflog
-	$ ... 1. se revisan las últimas acciones en el repo ...	$ ... 2. el commit inicial tiene id e6e65d1 ...
+	$ ... 1. se revisan las últimas acciones en el repo ...	
+	$ ... 2. el commit inicial tiene id e6e65d1 ...
 	$ git reset --hard e6e65d1
 	```
 	
 	*Opción 2* Movimiento sólo de HEAD sin modificar el puntero master
 	```
 	$ git reflog
-	$ ... 1. se revisan las últimas acciones en el repo ...	$ ... 2. el commit inicial tiene id e6e65d1 ...
+	$ ... 1. se revisan las últimas acciones en el repo ...	
+	$ ... 2. el commit inicial tiene id e6e65d1 ...
 	$ git checkout e6e65d1
 	```
 
@@ -533,7 +537,8 @@ Los pasos a ejecutar son los siguientes (los pasos en negrita indican que hay un
 	*Opción 1*		
 	```
 	$ git reflog
-	$ ... 1. se revisan las últimas acciones en el repo ...	$ ... 2. el commit inicial tiene id 9fed53c ...
+	$ ... 1. se revisan las últimas acciones en el repo ...
+	$ ... 2. el commit inicial tiene id 9fed53c ...
 	$ git reset --hard 9fed53c
 	```
 
@@ -574,41 +579,6 @@ Los pasos a ejecutar son los siguientes (los pasos en negrita indican que hay un
 	
 35. Ir al tag htmlify
 
-		```
-		$ git checkout htmlify
-		```
-
-## Ejercicio 2: Github, Forks y Pull Requests
-La práctica consiste en hacer un fork del repositorio https://github.com/kasappeal/nerdquotes.git y, en el archivo README.md añadir, en formato markdown, una cita (a ser posible con connotaciones frikis) seguido del nombre de su autor (en cursiva).
-
-Cada alumno deberá introducir su cita en la posición la cual sea el resto de la división entera de la suma de el día, mes y año de nacimiento entre 300. Por ejemplo: si has nacido el 29 de Enero de 1985: (29 + 1 + 1985) % 300 => 215. Esto quiere decir que deberé introducir mi cita tras la cita en posición 215.
-
-Tras añadir la línea en el fork, solicitar un pull request al repositorio original (https://github.com/ kasappeal/nerdquotes.git).
-
-Si el pull request causa conflictos, se rechazará y de manera que el alumno deberá actualizar su repositorio con los últimos contenidos del repositorio forkeado, solucionar los conflictos y volver a realizar otro pull request.
-
-### Cada cita deberá llegar el formato siguiente:
-
-> Cita
-
-*Nombre del autor* 
-
-Es decir:
-
-- Deberá empezar creando una línea horizontal en markdown: -------
-- Una línea en blanco
-- La cita, con un sangrado en markdown (empezando con el caracter: >)
-- Una línea en blanco
-- El nombre del autor en cursiva (poniendo el nombre del autor entre *Nombre del autor*)
-
-### Ejemplo:
-
-> Programmer: An organism that turns caffeine and pizza into source code. 
-
-*Blogger de Niro*
-
-Notas:
-
-- El nombre del autor puede ser ficticio.
-- La cita no tiene por qué estar en inglés.
-- Puedes inventar tu propia cita o utilizar una de las siguientes: [citas](http://www.brainyquote.com/quotes/keywords/nerd.html) 
+	```
+	$ git checkout htmlify
+	```
